@@ -3,6 +3,9 @@ Regular Grid Multivariate linear interpolation
 
 Non-recursive implementation of linear interpolation on `regular grids <https://en.wikipedia.org/wiki/Regular_grid>`_.
 
+Usage
+--------------
+
 * Cartesian grid **regulargrid.cartesiangrid.CartesianGrid** (equal spacing between points)
 
 	Uses very fast implementation based on scipy.ndimage.map_coordinates
@@ -31,7 +34,15 @@ Non-recursive implementation of linear interpolation on `regular grids <https://
 		print grid([0.1, 0.3], [0.5, 0.5], [0.3, 0.2])
 
 * Regular grid **regulargrid.regulargrid.RegularGrid** (unequal spacing between points)
-	
+
+Get
+--------
+via pip/easy_install from `PyPI <https://pypi.python.org/pypi/regulargrid/>`::
+
+	pip install regulargrid
+
+Source hosted at `Github <https://github.com/JohannesBuchner/regulargrid>`_
+
 
 References:
 
