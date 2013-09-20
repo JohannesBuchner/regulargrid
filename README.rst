@@ -37,7 +37,7 @@ Usage
 
 Get
 --------
-via pip/easy_install from `PyPI <https://pypi.python.org/pypi/regulargrid/>`::
+via pip/easy_install from `PyPI <https://pypi.python.org/pypi/regulargrid/>`_::
 
 	pip install regulargrid
 
