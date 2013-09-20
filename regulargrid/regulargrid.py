@@ -10,8 +10,8 @@ class RegularGrid(object):
 		
 		gridall = []
 		for l, b in zip(limits, breaks):
-			assert numpy.all(b > l[0]), [b, l[0]]
-			assert numpy.all(b < l[1]), [b, l[1]]
+			assert b == [] or numpy.all(numpy.asarray(b) > l[0]), [b, l[0]]
+			assert b == [] or numpy.all(numpy.asarray(b) < l[1]), [b, l[1]]
 			grid = numpy.array([l[0]] + list(b) + [l[1]])
 			gridall.append(grid)
 			assert numpy.all(grid[1:] > grid[:-1]), 'breaks need to be ascending'

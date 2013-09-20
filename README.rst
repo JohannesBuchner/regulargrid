@@ -1,10 +1,7 @@
-===============================================
 Regular Grid Multivariate linear interpolation
 ===============================================
 
-Non-recursive implementation of linear interpolation on `regular grids`_.
-
-.. _regular grids: Regular grid. (2012, December 6). In Wikipedia, The Free Encyclopedia. Retrieved 01:29, February 27, 2013, from http://en.wikipedia.org/w/index.php?title=Regular_grid&oldid=526728963 
+Non-recursive implementation of linear interpolation on `regular grids <https://en.wikipedia.org/wiki/Regular_grid>`_.
 
 References:
 
