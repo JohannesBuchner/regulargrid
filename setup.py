@@ -10,7 +10,7 @@ setup(
     url='http://pypi.python.org/pypi/regulargrid/',
     license='LICENSE.txt',
     description='Regular Grid Multivariate linear interpolation',
-    long_description=open('README.rst').read(),
+    long_description="Fast linear interpolation in regular grids",
     install_requires=[
         "scipy>=0.7.0",
     ],
