@@ -31,10 +31,11 @@ class RegularGrid(object):
 		norm_distances = []
 		for coord, breaks in zip(coords, self.grid):
 			i = numpy.searchsorted(breaks, coord) - 1
-			if i == -1:
-				assert coord == breaks[0], (coord, breaks[0])
-				# got the last break point, but we don't want that
-				i = 0
+			i = numpy.where(i == -1, 0, i)
+			#if i == -1:
+			#	assert coord == breaks[0], (coord, breaks[0])
+			#	# got the last break point, but we don't want that
+			#	i = 0
 
 			indices.append(i)
 			norm_distances.append((coord - breaks[i]) / (breaks[i+1] - breaks[i]))
@@ -49,7 +50,7 @@ class RegularGrid(object):
 			#for ei, i, breaks, yi in zip(edge_indices, indices, self.grid, y):
 				#j = j * len(breaks) + ei
 			for ei, i, yi in zip(edge_indices, indices, norm_distances):
-				weight *= (1 - yi) if ei == i else yi
+				weight *= numpy.where(ei == i, 1 - yi, yi)
 			value += self.values[edge_indices] * weight
 		return value
 

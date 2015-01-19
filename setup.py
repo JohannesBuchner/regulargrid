@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='regulargrid',
-    version='0.2',
+    version='0.3',
     author='Johannes Buchner',
     author_email='buchner.johannes@gmx.at',
     packages=['regulargrid', 'regulargrid.test'],
