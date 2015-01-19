@@ -6,6 +6,9 @@ Non-recursive implementation of linear interpolation on `regular grids <https://
 Usage
 --------------
 
+* Code from this project has been integrated into scipy v0.14.0.
+  See `scipy.interpolate.RegularGridInterpolator <http://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.RegularGridInterpolator.html>`_.
+
 * Cartesian grid **regulargrid.cartesiangrid.CartesianGrid** (equal spacing between points)
 
 	Uses very fast implementation based on scipy.ndimage.map_coordinates
